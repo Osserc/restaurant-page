@@ -18,3 +18,4 @@ contactsTab.addEventListener(`click`, function() {
     console.log(`\`sup`)
 })
 
+homepage.showHomepage()
