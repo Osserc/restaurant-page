@@ -1,7 +1,6 @@
-import homepage from "./homepage"
-import menu from "./menu"
-import dishes from "./dishes"
-import contacts from "./contacts"
+import * as homepage from "./homepage"
+import * as menu from "./menu"
+import * as contacts from "./contacts"
 import '../scss/styles.scss'
 import * as bootstrap from 'bootstrap'
 
@@ -18,3 +17,4 @@ menuTab.addEventListener(`click`, function() {
 contactsTab.addEventListener(`click`, function() {
     console.log(`\`sup`)
 })
+
