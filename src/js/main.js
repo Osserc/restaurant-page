@@ -8,14 +8,10 @@ const homeTab = document.getElementById(`home-tab`)
 const menuTab = document.getElementById(`menu-tab`)
 const contactsTab = document.getElementById(`contacts-tab`)
 
-homeTab.addEventListener(`click`, function() {
-    console.log(`\`sup`)
-})
-menuTab.addEventListener(`click`, function() {
-    console.log(`\`sup`)
-})
-contactsTab.addEventListener(`click`, function() {
-    console.log(`\`sup`)
-})
+homeTab.addEventListener(`click`, homepage.showHomepage)
+
+menuTab.addEventListener(`click`, menu.showMenu)
+
+contactsTab.addEventListener(`click`, contacts.showContacts)
 
 homepage.showHomepage()

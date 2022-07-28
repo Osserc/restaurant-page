@@ -11,13 +11,14 @@ function buildHomepage() {
 
 function buildHeader() {
     const header = document.createElement(`h3`)
+    header.classList.add(`fade-in`)
     header.innerHTML = `A life altering meal awaits you...`
     return header
 }
 
 function buildCopy() {
     const holder = document.createElement(`div`)
-    holder.classList.add(`w-50`)
+    holder.classList.add(`text-center`, `w-100`, `fade-in`)
     const firstParagraph = document.createElement(`div`)
     firstParagraph.innerHTML = `Do you have a taste for the exotic?`
     holder.appendChild(firstParagraph)
