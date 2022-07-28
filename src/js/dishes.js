@@ -16,9 +16,6 @@ const dishTomahawkImageLoaded = new Image()
 dishTomahawkImageLoaded.src = dishTomahawkImage
 
 const dishFactory = (title, image, description, price) => {
-
-
-
     return { title, image, description, price }
 }
 

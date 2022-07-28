@@ -21,16 +21,13 @@ function buildCopy() {
     holder.classList.add(`text-center`, `w-100`, `fade-in`)
     const firstParagraph = document.createElement(`div`)
     firstParagraph.innerHTML = `Do you have a taste for the exotic?`
-    holder.appendChild(firstParagraph)
     const secondParagraph = document.createElement(`div`)
     secondParagraph.innerHTML = `Do you want to find a group of like-minded people who will not judge fo your peculiar inclinations?`
-    holder.appendChild(secondParagraph)
     const thirdParagraph = document.createElement(`div`)
     thirdParagraph.innerHTML = `Namira's Den is exactly what you need. You will have the chance to indulge in your deepest desires without fear of judgment, surrounded by kindred spirits.`
-    holder.appendChild(thirdParagraph)
     const fourthParagraph = document.createElement(`div`)
     fourthParagraph.innerHTML = `Make a reservation today!`
-    holder.appendChild(fourthParagraph)
+    holder.append(firstParagraph, secondParagraph, thirdParagraph, fourthParagraph)
     return holder
 }
 
