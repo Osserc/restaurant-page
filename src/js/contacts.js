@@ -1,12 +1,14 @@
 import { page } from "./globals"
 
 function showContacts() {
-    page.replaceChildren(...buildContacts())
+    page.replaceChildren(buildContacts())
 }
 
 function buildContacts() {
-    const contacts = [buildHeader(), buildAddress(), buildEmail(), buildPhone()]
-    return contacts
+    const holder = document.createElement(`div`)
+    holder.classList.add(`d-flex`, `flex-column`, `align-items-center`, `card`, `bg-danger`, `text-dark`, `w-100`, `px-5`, `py-2`, `fade-in`)
+    holder.append(buildHeader(), buildAddress(), buildEmail(), buildPhone())
+    return holder
 }
 
 function buildHeader() {
