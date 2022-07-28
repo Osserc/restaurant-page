@@ -2,6 +2,7 @@ const path = require('path')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 module.exports = {
+  mode: `development`,
   entry: './src/js/main.js',
   output: {
     filename: 'main.js',
@@ -10,6 +11,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin(),
   ],
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -38,5 +40,4 @@ module.exports = {
       }
     ]
   },
-  mode: `none`
 }
